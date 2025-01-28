@@ -1,7 +1,7 @@
 services:
   dev-container-refmerge:
     build:
-      context: .
+      context: https://github.com/manuelohrndorf/dev-container.git
       dockerfile: Dockerfile
     container_name: dev-container-refmerge
     ports:
