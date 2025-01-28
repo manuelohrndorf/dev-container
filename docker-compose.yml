@@ -2,7 +2,7 @@ services:
   dev-container-refmerge:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: https://raw.githubusercontent.com/manuelohrndorf/dev-container/refs/heads/main/Dockerfile
     container_name: dev-container-refmerge
     ports:
       - "127.0.0.1:3000:3000" # HTTP access: https://localhost:3000/
