@@ -1,10 +1,10 @@
 services:
   dev-container-refmerge:
     build:
-      #context: ${BUILD_CONTEXT}
-      #dockerfile: ${BUILD_DOCKERFILE}
-      context: https://github.com/manuelohrndorf/ca.ualberta.cs.smr.refmerge.git
-      dockerfile: docker/dev-refmerge-lscr-arch/Dockerfile
+      context: ${BUILD_CONTEXT}
+      dockerfile: ${BUILD_DOCKERFILE}
+      #context: https://github.com/manuelohrndorf/ca.ualberta.cs.smr.refmerge.git
+      #dockerfile: docker/dev-refmerge-lscr-arch/Dockerfile
       #context: .
       #dockerfile: Dockerfile
     container_name: dev-container-refmerge
