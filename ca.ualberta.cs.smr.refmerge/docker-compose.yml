@@ -1,9 +1,8 @@
 services:
   dev-container-refmerge:
     build:
-      context: https://github.com/manuelohrndorf/dev-container.git
-      #context: .
-      dockerfile: ca.ualberta.cs.smr.refmerge/Dockerfile
+      context: https://github.com/manuelohrndorf/ca.ualberta.cs.smr.refmerge.git
+      dockerfile: docker/dev-refmerge-lscr-arch/Dockerfile
     container_name: dev-container-refmerge
     ports:
       - "127.0.0.1:3000:3000" # HTTP access: https://localhost:3000/
