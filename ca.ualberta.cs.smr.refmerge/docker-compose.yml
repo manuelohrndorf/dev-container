@@ -12,7 +12,7 @@ services:
       - "127.0.0.1:3000:3000" # HTTP access: https://localhost:3000/
       - "127.0.0.1:3001:3001" # HTTPS access: https://localhost:3001/
       - "127.0.0.1:3002:6901" # HTTPS access (direct KasmVNC, no audio): https://localhost:3002/
-      - "${PORT_MAPPING}"
+      - "100.78.50.52:3000:3000"
     security_opt:
       - seccomp=unconfined # modern GUI desktop apps have issues with the latest Docker and syscall compatibility
     volumes:
